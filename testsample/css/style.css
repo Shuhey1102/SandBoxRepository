@@ -1,3 +1,6 @@
+body{
+    font-family: "Kiwi Maru", "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
+}
 header{
     width: 100%;
     padding:20px;
@@ -11,18 +14,45 @@ header h1{
     text-align: center;
 }
 main{
+    display: block;
     width: 100%;
     padding:20px;
-    height:600px;
     line-height: 50px;
     background-color:cornsilk;
 }
 
 footer{
+    display: block;
     width: 100%;    
-    line-height: 50px;
+    line-height: 15px;
     height:50px;
     padding:20px;
-
     background-color: darkkhaki;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
 }
